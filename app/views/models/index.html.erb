@@ -1,0 +1,9 @@
+<a href="/"><< Voltar</a>
+<ul>
+  <% if @models.size == 0 %>
+    <li>Modelo selecionado invalido!</li>
+  <% end %>
+  <% @models.each do |model| %>
+    <li><%= model.name %></li>
+  <% end %>
+</ul>
